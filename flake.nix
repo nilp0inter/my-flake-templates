@@ -5,14 +5,14 @@
 
   outputs = { self, templates }: {
 
-    templates = {
+    templates = templates.templates // {
       pipenv = {
         path = ./pipenv;
         description = "A python environment managed with pipenv for NixOS systems";
       };
     };
 
-    defaultTemplate = templates.trivial;  # fallback to default nixos template
+    defaultTemplate = templates.defaultTemplate;  # fallback to default nixos template
 
   };
 }
