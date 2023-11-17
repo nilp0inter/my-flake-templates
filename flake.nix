@@ -10,6 +10,10 @@
         path = ./pipenv;
         description = "A python environment managed with pipenv for NixOS systems";
       };
+      kaa = {
+        path = ./kaa;
+        description = "A kaa environment for NixOS systems";
+      };
     };
 
     defaultTemplate = templates.defaultTemplate;  # fallback to default nixos template
