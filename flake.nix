@@ -5,7 +5,7 @@
 
   outputs = { self, templates }: {
 
-    templates = templates.templates // {
+    templates = {
       pipenv = {
         path = ./pipenv;
         description = "A python environment managed with pipenv for NixOS systems";
@@ -13,6 +13,10 @@
       kaa = {
         path = ./kaa;
         description = "A kaa environment for NixOS systems";
+      };
+      poetry = {
+        path = ./poetry;
+        description = "A python environment managed with poetry for NixOS systems";
       };
     };
 
