@@ -18,6 +18,10 @@
         path = ./poetry;
         description = "A python environment managed with poetry for NixOS systems";
       };
+      cheatsheet = {
+        path = ./cheatsheet;
+        description = "A LaTeX template for a cheatsheet";
+      };
     };
 
     defaultTemplate = templates.defaultTemplate;  # fallback to default nixos template
